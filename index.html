@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sistema Cat & Dog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/8451556630.js" crossorigin="anonymous"></script>
+</head>
+
+    <body>
+        <main>
+            <section class="Cabecalho" id="header">  
+                <nav class="menu">
+                    <div id="logo">
+                        <img src="_Logo.png"/>
+                    </div>
+                    <section class="abas">             
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="adote.html">adote</a></li>
+                            <li><a href="cadastro.html">cadastre um pet</a></li>
+                            <li><a href="denuncie.html">denuncie</a></li>
+                        </ul> 
+                    </section>
+                </nav>
+            </section>
+            <section class="home">
+                <div class="frases">
+                    <h1 id="frase1">Adote <span>Amor</span>, Cultive <span>Felicidade</span>, Celebre <span>Companheirismo</span>.</h1>
+                    <h2>Por que adotar?</h2>
+                    <h3>Adotar um animal de estimação é um gesto repleto de amor e significado. Além de salvar vidas, a adoção preenche nossos corações com uma alegria incomparável. Escolher dar um lar a um companheiro peludo cria laços profundos de lealdade e companheirismo. Esses amigos não são apenas animais de estimação; eles se tornam membros queridos da família, trazendo uma felicidade constante e incondicional.</h3>
+                    <a href="login.html"><button>adote um amigo</button></a>
+                </div>
+                <div class="imagem">
+                    <img src="a folou home.png"/>
+                </div>
+            </section>
+            <section class="home2">
+                <div class="lembrete-natal">
+                    <img src="cachorro natalino.png"/>
+                </div>
+                <div class="frase-natal">
+                    <h1>Filhotes são para sempre, não apenas para o Natal</h1>
+                    <p>Ao nos envolvermos no espírito natalino, é crucial lembrar que adotar um filhote é um compromisso duradouro, indo além das festividades. Esses adoráveis companheiros não são presentes temporários, mas membros da família que demandam responsabilidade contínua, atenção diária e amor incondicional ao longo de suas vidas. A decisão de adotar é uma promessa de cuidado a longo prazo, construindo uma parceria significativa repleta de alegrias e desafios inesquecíveis. Este Natal, convidamos a celebração do verdadeiro espírito da adoção responsável, lembrando que filhotes são para sempre, trazendo amor e companhia em todas as estações da vida.</p>
+                </div>
+            </section>
+            <section class="home3">
+                    <div class="titulo-3">
+                        <h1>patinhas recém chegadas</h1>
+                    </div> 
+                    <div class="novos-pets">
+                        <img src="dog 1 - aurora.png"/>
+                        <h1>Aurora</h1>
+                        <h2>4 anos|fêmea</h2>
+                        <img src="dog 2 - billie.png"/>
+                        <h1>Billie</h1>
+                        <h2>3 anos|fêmea</h2>
+                        <img src="cat 1 - finneas.png"/>
+                        <h1>Phineas</h1>
+                        <h2>8 anos|macho</h2>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <div class="parte1">
+                <div class="newsletter">
+                    <h1>NEWSLETTER</h1>
+                    <p>Cadastre seu e-mail e receba novidades</p>
+                    <input type="email" placeholder=""/>  
+                </div>
+                <div class="contato">
+                   <h1>CONTATO</h1>
+                    <p>@caoegato</p>
+                    <p>Cão e Gato</p>
+                    <p>suporte@caoegato.com</p> 
+                </div>
+                <div class="mapa">
+                    <h1>MAPA DO SITE</h1>
+                    <p>Home</p>
+                    <p>Login</p>
+                    <p>Adote</p>
+                    <p>Cadastro</p>
+                    <p>Denuncie</p>
+                </div>
+            </div>
+        </footer> 
+        <script>
+            var cabecalhoLogo = document.querySelector("main section.Cabecalho .menu div#logo img");
+            var Redes = document.querySelectorAll("div.redes img");
+            var goldenImage = document.querySelector("div.imagem img");
+
+            window.onscroll = function () {minhaFuncao()};
+            var header = document.getElementById("header");
+            var logo = document.querySelector(".menu #logo img");
+            var sticky = header.offsetTop;
+            function minhaFuncao() {
+                if ((window.pageYOffset > sticky)) {
+                    header.classList.add("sticky");
+                    logo.classList.add("sticky");
+                }
+                else{
+                    header.classList.remove("sticky");
+                    logo.classList.remove("sticky");
+                }
+                
+            }
+        </script>   
+    </body>
+</html>

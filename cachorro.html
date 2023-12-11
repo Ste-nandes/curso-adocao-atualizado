@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sistema Cat & Dog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    
+    <style>
+        .especificacao option, input, select {
+        font-family: 'League Spartan', sans-serif;
+        background-color: rgb(255, 223, 88);
+        border-radius: 10px;
+        padding: 6px;
+        width: 22%;
+        display: inline;
+    }
+    </style>
+    </head>
+
+    <body>
+
+        <section class="Cabecalho">
+           
+            <nav class="menu">
+                <div id="logo">
+                    <img src="">
+                </div>
+                
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="pq-adotar.html">Por que adotar?</a></li>
+                    <li><a href="cadastro.html">cadastre um animal</a></li>
+                    <li><a href="adote.html">adote</a></li>
+                    <li><a href="quemsomos.html">quem somos?</a></li>
+                    <li><a href="denuncie.html">denuncie</a></li>
+                </ul>
+            <div class="redes">
+                <a href="#" class="face"><img src=""/></a>
+                <a href="#" class="insta"><img src=""/></a>
+                <a href="#" class="twitter"><img src=""/></a>
+            </div>  
+        </nav>
+    </header>
+    </section>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+              <div class="filtros col mx-auto d-flex flex-row flex-wrap gap-5 justify-content-between align-items-center">
+                    
+                    <select>
+                        <option>Todas as espécies</option>
+                        <option>Cachorro</option>
+                        <option>Gato</option>
+                    </select>
+                    
+                    <select>
+                        <option>Todos os sexos</option>
+                        <option>Fêmea</option>
+                        <option>Macho</option>
+                    </select>
+                    
+                    <select>
+                        <option>Todos os portes</option>
+                        <option>Pequeno</option>
+                        <option>Grande</option>
+                        <option>Médio</option>
+                    </select><br><br>
+                        
+                        <select>
+                            <option>Todos os estados</option>
+                            <option>Acre</option>
+                            <option>Alagoas</option>
+                            <option>Amapá</option>
+                            <option>Amazonas</option>
+                            <option>Bahia</option>
+                            <option>Ceará</option>
+                            <option>Distrito Federal</option>
+                            <option>Espírito Santo</option>
+                            <option>Goiás</option>
+                            <option>Maranhão</option>
+                            <option>Mato Grosso</option>
+                            <option>Mato Grosso do Sul</option>
+                            <option>Minas Gerais</option>
+                            <option>Pará</option>
+                            <option>Paraíba</option>
+                            <option>Paraná</option>
+                            <option>Pernambuco</option>
+                            <option>Piauí</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Rio Grande do Norte</option>
+                            <option>Rio Grande do Sul</option>
+                            <option>Rondônia</option>
+                            <option>Roraima</option>
+                            <option>Santa Catarina</option>
+                            <option>São Paulo</option>
+                            <option>Sergipe</option>
+                            <option>Tocantins</option>  
+                        </select>
+                    <input type="text" placeholder="Nome do bichinho">
+                </div>
+            </div>
+          </section>
+
+    <section class="opcoes-animais">
+        <div class="animais">
+            <div class="cachorro-gato">
+                <div class="img"><img src="" /></div>
+                <div class="nome">*nome do cãozinho*</div>
+                <button>Quero adotar</button>
+            </div>
+            <div class="cachorro-gato">
+                <div class="img"><img src="" /></div>
+                <div class="nome">*nome do cãozinho*</div>
+                <button>Quero adotar</button>
+            </div>
+            <div class="cachorro-gato">
+                <div class="img"><img src="" /></div>
+                <div class="nome">*nome do cãozinho*</div>
+                <button>Quero adotar</button>
+            </div>
+            <div class="cachorro-gato">
+                <div class="img"><img src="" /></div>
+                <div class="nome">*nome do cãozinho*</div>
+                <button>Quero adotar</button>
+            </div>
+            <div class="cachorro-gato">
+                <div class="img"><img src="" /></div>
+                <div class="nome">*nome do cãozinho*</div>
+                <button>Quero adotar</button>
+            </div>
+            <div class="cachorro-gato">
+                <div class="img"><img src="" /></div>
+                <div class="nome">*nome do cãozinho*</div>
+                <button>Quero adotar</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        var cachorros = document.querySelectorAll("section.opcoes-animais div.animais div.cachorro-gato img");
+    </script>
+            

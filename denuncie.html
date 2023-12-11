@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sistema Cat & Dog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    </head>
+
+    <body>
+
+        <section class="Cabecalho" id="header">
+           
+            <nav class="menu">
+                <div id="logo">
+                    <img src="Cat & Dog.png"/>
+                </div>
+                
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="adote.html">adote</a></li>
+                    <li><a href="cadastro.html">cadastre um pet</a></li>
+                    <li><a href="denuncie.html">denuncie</a></li>
+                </ul>
+            </nav>
+    </header>
+    </section>
+
+    <section class="parteA">
+          <div class="denuncie">
+        
+        <div class="textos-denuncia">
+            <h1>Saiba como denunciar maus-tratos ou<br> crueldades contra animais</h1>
+        
+        <h2> Quando o assunto é denúncia de maus-tratos ou crueldade contra animais, o Brasil possui legislação pertinente e autoridades competentes que são responsáveis pela
+             manutenção da lei e punição de crimes</h2>
+        <h3>Caso você presencie maus-tratos a animais de quaisquer espécies, sejam domésticos, domesticados, silvestres ou exóticos – como abandono, envenenamento, presos
+             constantemente em correntes ou cordas muito curtas, manutenção em lugar anti-higiênico, mutilação, presos em espaço incompatível ao porte do animal ou em local 
+             sem iluminação e ventilação, utilização em shows que possam lhes causar lesão, pânico ou estresse, agressão física, exposição a esforço excessivo e animais 
+             debilitados (tração), rinhas, etc. –, vá à delegacia de polícia mais próxima para lavrar o Boletim de Ocorrência (BO), ou compareça à Promotoria de Justiça do Meio 
+             Ambiente.
+             A denúncia de maus-tratos é legitimada pelo Art. 32, da Lei Federal nº. 9.605, de 12.02.1998 (Lei de Crimes Ambientais) e pela Constituição Federal Brasileira, de 05
+              de outubro de 1988.</h3>     
+        </div>
+        
+             <div id="imagem-denuncia">
+                 <img src="baby dog.png"/>
+             </div> 
+    </section>
+  
+             
+              <h4>Telefones e endereços para denúncia</h4>
+              <h5>Note que o autor do processo judicial será o estado e não você. Sendo assim, não tema denunciar. As organizações não governamentais possuem um papel importante
+                e insubstituível na sociedade. Porém, exerça a sua cidadania. Não se cale frente aos crimes contra os animais e o meio ambiente, e exija das autoridades
+                 responsáveis às providências previstas por lei.</h5>
+
+                    <h6>
+                        <p>Brasil</p>
+                        Polícia Militar:190
+                    Disque Denúncia:181
+                    IBAMA (no caso de animais silvestres) - Linha Verde: 0800 61 8080
+                    www.ibama.gov.br/denuncias
+                    Ministério Público Federal: <a href="http://www.mpf.mp.br/servicos/sac">//www.mpf.mp.br/servicos/sac</a>
+                    Safer Net (crimes de crueldade ou apologia aos maus-tratos na internet): <a href="https://new.safernet.org.br/denuncie"> www.safernet.org.br</a></h6>
+                
+           
+    </div>
+    <script>
+        var babyDog = document.querySelector("div.denuncie img");
+
+        window.onscroll = function () {minhaFuncao()};
+            var header = document.getElementById("header");
+            var logo = document.querySelector(".menu #logo img");
+            var sticky = header.offsetTop;
+            function minhaFuncao() {
+                if ((window.pageYOffset > sticky)) {
+                    header.classList.add("sticky");
+                    logo.classList.add("sticky");
+                }
+                else{
+                    header.classList.remove("sticky");
+                    logo.classList.remove("sticky");
+                }
+                
+            }
+    </script>
